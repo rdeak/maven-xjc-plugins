@@ -2,11 +2,11 @@
 
 Examples of generating JAXB annotated classes with popular Maven plugins:
 
-[cxf](https://cxf.apache.org/cxf-xjc-plugin.html) creates smallest jar and fastest compilation 
+* [cxf](https://cxf.apache.org/cxf-xjc-plugin.html) personal favorite, creates smallest jar and fastest compilation 
 
-[codehouse jaxb2-maven-plugin](http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/)
+* [codehouse jaxb2-maven-plugin](http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/) provides plenty of configuration options
 
-[jvnet jaxb2-maven-plugin](https://github.com/highsource/maven-jaxb2-plugin)
+* [jvnet jaxb2-maven-plugin](https://github.com/highsource/maven-jaxb2-plugin)
 
 
 ## What is JAXB?
@@ -52,11 +52,6 @@ or add JVM argument
 * [XMLBeans](https://xmlbeans.apache.org/)
 * [Digester](https://commons.apache.org/proper/commons-digester/)
 * [JIBX](http://jibx.sourceforge.net/)
-
-## Popular Maven plugins homepages:
-* [cxf-xjc-plugin](http://cxf.apache.org/cxf-xjc-plugin.html) personal favorite
-* [maven-jaxb2-plugin](https://github.com/highsource/maven-jaxb2-plugin) provides plenty of configuration options
-* [jaxb2-maven-plugin](http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/index.html)
 
 ## References
 * [jaxb homepage](https://github.com/javaee/jaxb-v2)
