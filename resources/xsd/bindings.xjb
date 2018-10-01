@@ -1,0 +1,22 @@
+<jxb:bindings
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+        version="2.1">
+    <jxb:globalBindings>
+        <xjc:serializable uid="1" />
+    </jxb:globalBindings>
+    <jxb:bindings schemaLocation="ern_382.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="net.ddex.xml.ern382"/>
+        </jxb:schemaBindings>
+        <jxb:bindings node="//xs:complexType[@name='PriceInformation']/xs:attribute[@name='PriceType']">
+            <jxb:property name="PriceTypeAttribute"/>
+        </jxb:bindings>
+    </jxb:bindings>
+    <jxb:bindings schemaLocation="avs_20161006.xsd">
+        <jxb:schemaBindings>
+            <jxb:package name="net.ddex.xml.avs"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings>

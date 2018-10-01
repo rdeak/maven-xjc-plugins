@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>hr.com.deak.ddex</groupId>
+        <artifactId>xml-gen</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>hr.com.deak.ddex</groupId>
+    <artifactId>codehouse-maven-jaxb2</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>2.3.1</version>
+                <executions>
+                    <execution>
+                        <id>generate-ern382-data</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                        <configuration>
+                            <extension>true</extension>
+                            <sources>
+                                <source>../resources/xsd/ern_382.xsd</source>
+                            </sources>
+                            <xjbSources>
+                                <xjbSource>../resources/xsd/bindings.xjb</xjbSource>
+                            </xjbSources>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <arguments>
+                        <arg>-XtoString</arg>
+                    </arguments>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jvnet.jaxb2_commons</groupId>
+                        <artifactId>jaxb2-basics</artifactId>
+                        <version>1.11.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jvnet.jaxb2_commons</groupId>
+            <artifactId>jaxb2-basics-runtime</artifactId>
+            <version>1.11.1</version>
+        </dependency>
+    </dependencies>
+
+</project>
